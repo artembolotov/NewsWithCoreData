@@ -11,6 +11,13 @@
 		ABB4619629CC1E520055FC61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB4619529CC1E520055FC61 /* ContentView.swift */; };
 		ABB4619829CC1E570055FC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB4619729CC1E570055FC61 /* Assets.xcassets */; };
 		ABB4619B29CC1E570055FC61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB4619A29CC1E570055FC61 /* Preview Assets.xcassets */; };
+		ABB461A329CC1ECF0055FC61 /* News.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABB461A129CC1ECF0055FC61 /* News.xcdatamodeld */; };
+		ABB461A529CC22F40055FC61 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB461A429CC22F40055FC61 /* NewsModel.swift */; };
+		ABB461A829CC37C80055FC61 /* StoredArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB461A729CC37C80055FC61 /* StoredArticle.swift */; };
+		ABB461AC29CC38D60055FC61 /* NewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB461AB29CC38D60055FC61 /* NewsSource.swift */; };
+		ABB461AE29CC43440055FC61 /* NewsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB461AD29CC43440055FC61 /* NewsContainer.swift */; };
+		ABB461B029CC5E280055FC61 /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB461AF29CC5E280055FC61 /* NetworkFetcher.swift */; };
+		ABB461B229CC603F0055FC61 /* NetworkArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB461B129CC603F0055FC61 /* NetworkArticle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		ABB4619529CC1E520055FC61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ABB4619729CC1E570055FC61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABB4619A29CC1E570055FC61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABB461A229CC1ECF0055FC61 /* News.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = News.xcdatamodel; sourceTree = "<group>"; };
+		ABB461A429CC22F40055FC61 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		ABB461A729CC37C80055FC61 /* StoredArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredArticle.swift; sourceTree = "<group>"; };
+		ABB461AB29CC38D60055FC61 /* NewsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSource.swift; sourceTree = "<group>"; };
+		ABB461AD29CC43440055FC61 /* NewsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContainer.swift; sourceTree = "<group>"; };
+		ABB461AF29CC5E280055FC61 /* NetworkFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetcher.swift; sourceTree = "<group>"; };
+		ABB461B129CC603F0055FC61 /* NetworkArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkArticle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,11 @@
 			children = (
 				ABB4619329CC1E520055FC61 /* NewsWithCoreDataApp.swift */,
 				ABB4619529CC1E520055FC61 /* ContentView.swift */,
+				ABB461AB29CC38D60055FC61 /* NewsSource.swift */,
+				ABB461AD29CC43440055FC61 /* NewsContainer.swift */,
+				ABB461AF29CC5E280055FC61 /* NetworkFetcher.swift */,
+				ABB461AA29CC387A0055FC61 /* Models */,
+				ABB461A129CC1ECF0055FC61 /* News.xcdatamodeld */,
 				ABB4619729CC1E570055FC61 /* Assets.xcassets */,
 				ABB4619929CC1E570055FC61 /* Preview Content */,
 			);
@@ -65,6 +84,16 @@
 				ABB4619A29CC1E570055FC61 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABB461AA29CC387A0055FC61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABB461A429CC22F40055FC61 /* NewsModel.swift */,
+				ABB461B129CC603F0055FC61 /* NetworkArticle.swift */,
+				ABB461A729CC37C80055FC61 /* StoredArticle.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB461B229CC603F0055FC61 /* NetworkArticle.swift in Sources */,
+				ABB461A529CC22F40055FC61 /* NewsModel.swift in Sources */,
+				ABB461AE29CC43440055FC61 /* NewsContainer.swift in Sources */,
+				ABB461B029CC5E280055FC61 /* NetworkFetcher.swift in Sources */,
 				ABB4619629CC1E520055FC61 /* ContentView.swift in Sources */,
+				ABB461A329CC1ECF0055FC61 /* News.xcdatamodeld in Sources */,
 				ABB4619429CC1E520055FC61 /* NewsWithCoreDataApp.swift in Sources */,
+				ABB461A829CC37C80055FC61 /* StoredArticle.swift in Sources */,
+				ABB461AC29CC38D60055FC61 /* NewsSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +311,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +341,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +377,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ABB461A129CC1ECF0055FC61 /* News.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ABB461A229CC1ECF0055FC61 /* News.xcdatamodel */,
+			);
+			currentVersion = ABB461A229CC1ECF0055FC61 /* News.xcdatamodel */;
+			path = News.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ABB4618829CC1E520055FC61 /* Project object */;
 }
